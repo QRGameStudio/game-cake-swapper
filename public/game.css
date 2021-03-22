@@ -3,4 +3,69 @@ body,
 #game-content {
   width: 100%;
   height: 100%;
+  background-color: var(--theme-primary);
+  color: var(--theme-contrast);
+}
+
+.block {
+  position: absolute;
+  border: 1px solid black;
+  border-bottom: none;
+  height: 8vh;
+}
+
+.block.light {
+  background-color: rgb(255, 107, 210);
+}
+
+.block.dark {
+  background-color: #462528;
+}
+
+.block.selected {
+  opacity: 50%;
+}
+
+.tableStand {
+  position: absolute;
+  background-color: rgb(145, 82, 0);
+  border: 1px solid black;
+  border-top: none;
+  width: 2vw;
+  height: 40vh;
+  bottom: 6vh;
+}
+
+.tableDesk {
+  position: absolute;
+  bottom: 46vh;
+  height: 4vh;
+  background-color: rgb(145, 82, 0);
+  border: 1px solid black;
+  border-bottom: none;
+  width: 20vw;
+}
+
+.button {
+  z-index: 999;
+  height: 100vh;
+  width: 33vw;
+  position: absolute;
+  background-color: transparent;
+}
+
+.scoreBox {
+  position: absolute;
+  right: 32px;
+  top: 16px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 32px;
+}
+
+.hScoreBox {
+  position: absolute;
+  right: 32px;
+  top: 56px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
 }
